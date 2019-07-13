@@ -1,0 +1,64 @@
+body {
+  width: 95%;
+  margin: auto;
+}
+#anounceArea {
+  height: 15vh;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hpLoss {
+  color: red;
+}
+
+#damage {
+  color: green;
+}
+
+#hpLossNum {
+  color: black;
+}
+
+#dmgNum {
+  color: black;
+}
+
+#enemyArea {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+#enemy1 {
+  width: 25%;
+  background-color: aquamarine;
+  margin: 1rem;
+}
+#enemy2 {
+  width: 25%;
+  background-color: aquamarine;
+  margin: 1rem;
+}
+#enemy3 {
+  width: 25%;
+  background-color: aquamarine;
+  margin: 1rem;
+}
+
+#playerSection {
+  height: 20vh;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25px;
+  margin-top: 1rem;
+  display: flex;
+}
