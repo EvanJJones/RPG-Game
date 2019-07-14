@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>RPG Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="anounceArea">
-      <h1 id="hpLoss">You lost <span id="hpLossNum">#</span> HP</h1>
-      <h1 id="damage">You did <span id="dmgNum">#</span> damage</h1>
+        <div id="yourDamageSection">
+            <h1 class="yourDamage">You did <span id="dmgNum1" class="dmgNum">#</span> damage</h1>
+            <h1 class="yourDamage">You did <span id="dmgNum2" class="dmgNum">#</span> damage</h1>
+            <h1 class="yourDamage">You did <span id="dmgNum3" class="dmgNum">#</span> damage</h1>
+        </div>
+        <div id="hpLossSection">
+            <h1 id="hpLoss1">You lost <span class="hpLossNum">#</span> HP</h1>
+            <h1 id="hpLoss2">You lost <span class="hpLossNum">#</span> HP</h1>
+            <h1 id="hpLoss3">You lost <span class="hpLossNum">#</span> HP</h1>
+        </div>
     </div>
     <div id="enemyArea">
-      <div id="enemy1"></div>
-      <div id="enemy2"></div>
-      <div id="enemy3"></div>
+        <div id="enemy1Section">
+            <div id="enemy1HP">100</div>
+            <div id="enemy1" class="enemy"></div>
+        </div>
+        <div id="enemy2Section">
+            <div id="enemy1HP">100</div>
+            <div id="enemy2" class="enemy"></div>
+        </div>
+        <div id="enemy3Section">
+            <div id="enemy1HP">100</div>
+            <div id="enemy3" class="enemy"></div>
+        </div>
     </div>
     <div id="playerSection">
-      <div id="playerHP"></div>
-      <div id="attackSection"></div>
+        <div id="playerHP"><span id="playerHPNumber">100</span>hp</div>
+        <div id="attackSection">
+            <div id="physical">Physical</div>
+            <div id="fire">Fire</div>
+            <div id="ice">Ice</div>
+        </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
-  </body>
+</body>
+
 </html>

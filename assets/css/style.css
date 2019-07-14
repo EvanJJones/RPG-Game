@@ -1,64 +1,115 @@
 body {
-  width: 95%;
-  margin: auto;
+    width: 95%;
+    margin: auto;
 }
+
 #anounceArea {
-  height: 15vh;
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 25px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 3em;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: 15vh;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#hpLoss {
-  color: red;
+#yourDamageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#damage {
-  color: green;
+#hpLossSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-#hpLossNum {
-  color: black;
+.yourDamage {
+    color: green;
+}
+
+#hpLoss1,
+#hpLoss2,
+#hpLoss3 {
+    color: red;
+}
+
+.hpLossNum {
+    color: black;
 }
 
 #dmgNum {
-  color: black;
+    color: black;
 }
 
 #enemyArea {
-  display: flex;
-  justify-content: space-evenly;
-  height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
 }
 
-#enemy1 {
-  width: 25%;
-  background-color: aquamarine;
-  margin: 1rem;
+#enemy1Section,
+#enemy2Section,
+#enemy3Section {
+    width: 25%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
-#enemy2 {
-  width: 25%;
-  background-color: aquamarine;
-  margin: 1rem;
+
+#enemy1HP,
+#enemy2HP,
+#enemy3HP {
+    font-size: 2rem;
+    text-align: center;
 }
+
+#enemy1,
+#enemy2,
 #enemy3 {
-  width: 25%;
-  background-color: aquamarine;
-  margin: 1rem;
+    background-color: aquamarine;
+    height: 40vh;
 }
 
 #playerSection {
-  height: 20vh;
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 25px;
-  margin-top: 1rem;
-  display: flex;
+    height: 20vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playerHP {
+    width: 20%;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#playerHPNumber {
+    font-size: 7rem;
+    color: red;
+}
+
+#attackSection {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    font-size: 3rem;
+}
+
+#physical,
+#fire,
+#ice {
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 1rem;
 }
