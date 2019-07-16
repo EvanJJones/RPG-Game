@@ -1,20 +1,30 @@
 body {
     width: 95%;
     margin: auto;
+    /* make text unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #anounceArea {
-    height: 15vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3vw;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#enemy1Anounce,
+#enemy2Anounce,
+#enemy3Anounce {
     border-width: 5px;
     border-style: solid;
     border-radius: 25px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 1rem;
 }
 
 #yourDamageSection {
@@ -29,7 +39,9 @@ body {
     justify-content: space-evenly;
 }
 
-.yourDamage {
+#yourDamage1,
+#yourDamage2,
+#yourDamage3 {
     color: green;
 }
 
@@ -43,7 +55,7 @@ body {
     color: black;
 }
 
-#dmgNum {
+.dmgNum {
     color: black;
 }
 
@@ -80,7 +92,7 @@ body {
     height: 20vh;
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -90,11 +102,12 @@ body {
     border-style: solid;
     border-radius: 25px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2vw;
+    margin-left: 3vw;
 }
 
 #playerHPNumber {
-    font-size: 7rem;
+    font-size: 7vw;
     color: red;
 }
 
@@ -102,7 +115,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    font-size: 3rem;
+    font-size: 3vw;
+}
+
+#attackSection :hover {
+    background-color: grey;
 }
 
 #physical,
@@ -112,4 +129,6 @@ body {
     border-style: solid;
     border-radius: 25px;
     padding: 1rem;
+    width: 10vw;
+    text-align: center;
 }

@@ -47,12 +47,13 @@ function physicalAtk() {
     if (targeted) {
         //checks if correctly attacked weakness
         if (targeted.weakness === "physical") {
-            targeted.damage(20);
+            targeted.damage(weaknessDamage);
             targeted.down = true;
-            $("#enemy1HP").text(enemy1.hp);
+
 
         } else {
-            targeted.damage(10);
+            targeted.damage(defaultDamage);
+
 
         }
         enemyAtk();
@@ -62,9 +63,12 @@ function physicalAtk() {
 function fireAtk() {
     if (targeted) {
         if (targeted.weakness === "fire") {
-            targeted.damage(20);
+            targeted.damage(weaknessDamage);
+            targeted.down = true;
+
         } else {
-            targeted.damage(10);
+            targeted.damage(defaultDamage);
+
         }
         enemyAtk();
     }
@@ -73,9 +77,12 @@ function fireAtk() {
 function iceAtk() {
     if (targeted) {
         if (targeted.weakness === "ice") {
-            targeted.damage(20);
+            targeted.damage(weaknessDamage);
+            targeted.down = true;
+
         } else {
-            targeted.damage(10);
+            targeted.damage(defaultDamage);
+
         }
         enemyAtk();
     }
@@ -92,6 +99,11 @@ var targeted = "";
 
 //holds player HP
 var playerHP = 100;
+
+//damage Values
+var defaultDamage = 10;
+var weaknessDamage = 20;
+var enemyDamage = 10;
 
 //click handlers for each of the attacks
 $("#physical").on("click", physicalAtk);
