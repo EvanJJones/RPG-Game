@@ -1,7 +1,8 @@
 body {
     width: 95%;
     margin: auto;
-    /* make text unselectable */
+    background-color: black;
+    color: white;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -9,22 +10,17 @@ body {
 }
 
 #anounceArea {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 3vw;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#enemy1Anounce,
-#enemy2Anounce,
-#enemy3Anounce {
     border-width: 5px;
     border-style: solid;
     border-radius: 25px;
-    padding: 1rem;
+    border-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #yourDamageSection {
@@ -39,9 +35,7 @@ body {
     justify-content: space-evenly;
 }
 
-#yourDamage1,
-#yourDamage2,
-#yourDamage3 {
+.yourDamage {
     color: green;
 }
 
@@ -52,11 +46,12 @@ body {
 }
 
 .hpLossNum {
-    color: black;
+    color: white;
 }
 
-.dmgNum {
-    color: black;
+#dmgNum,
+#enemyTarget {
+    color: white;
 }
 
 #enemyArea {
@@ -84,7 +79,6 @@ body {
 #enemy1,
 #enemy2,
 #enemy3 {
-    background-color: aquamarine;
     height: 40vh;
 }
 
@@ -92,7 +86,7 @@ body {
     height: 20vh;
     margin-top: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -101,13 +95,13 @@ body {
     border-width: 5px;
     border-style: solid;
     border-radius: 25px;
+    border-color: white;
     text-align: center;
     font-size: 2vw;
-    margin-left: 3vw;
 }
 
 #playerHPNumber {
-    font-size: 7vw;
+    font-size: 10vw;
     color: red;
 }
 
@@ -118,7 +112,9 @@ body {
     font-size: 3vw;
 }
 
-#attackSection :hover {
+#physical:hover,
+#fire:hover,
+#ice:hover {
     background-color: grey;
 }
 
@@ -128,7 +124,17 @@ body {
     border-width: 5px;
     border-style: solid;
     border-radius: 25px;
+    border-color: white;
     padding: 1rem;
-    width: 10vw;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    height: 90%;
     text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 1rem;
 }
