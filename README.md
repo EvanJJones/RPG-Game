@@ -1,5 +1,8 @@
 # unit-4-game
 
+## basic description
+Simple rpg style game based around the basics of combat in the Shin Megami Tensei games. Try and guess the weaknesses of your enemies, when you correctly guess you knock them down so they can't attack you. try and kill al the enemies.
+
 ## premise / ideas
 
 - RPG game with three enemies you need to face all at once
