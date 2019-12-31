@@ -27,4 +27,4 @@ HTML, CSS, Javascript and Jquery
 
 ## Contact
 
-evanjones@fastmail.net
+evan@evanjjones.com
